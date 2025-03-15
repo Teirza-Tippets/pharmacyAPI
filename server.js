@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
 const expressLayouts = require('express-ejs-layouts');
+const cors = require("cors");
+app.use(cors());
 const { MongoClient } = require('mongodb');
 const setupSwagger = require("./swagger");
 const path = require('path');
