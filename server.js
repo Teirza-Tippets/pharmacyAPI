@@ -2,11 +2,14 @@ const express = require('express');
 const app = express();
 const expressLayouts = require('express-ejs-layouts');
 const { MongoClient } = require('mongodb');
+const setupSwagger = require("./swagger");
 const path = require('path');
 // const categoryRoutes = require('./src/routes/categories/category')
 const drugRoutes = require('./src/routes/drugs/medication')
 
 require('dotenv').config();
+
+setupSwagger(app);
 
 // MongoDB Connection
 const connectDB = async () => {
@@ -48,4 +51,5 @@ app.use('/medication', drugRoutes);
 const PORT = process.env.PORT;
 app.listen(PORT, () => {
   console.log(`Server running on port http://localhost:${PORT}`);
+  console.log(`SwaggerAPI running on http://localhost:${PORT}/api-docs`);
 });
