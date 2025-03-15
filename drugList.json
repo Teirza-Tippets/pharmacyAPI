@@ -1,0 +1,163 @@
+[
+    {
+      "brand_name": "Lexapro",
+      "generic_name": "Escitalopram",
+      "manufacturer": "MacLeods Pharmaceuticals Ltd",
+      "dosage_strengths": ["5 mg", "10 mg", "20 mg"],
+      "dosage_form": "tablets",
+      "drug_class": "SSRI"
+    },
+    {
+      "brand_name": "Oxycodone HCL IR",
+      "generic_name": "Oxycodone",
+      "manufacturer": "Mallinckrodt Pharmaceutical",
+      "dosage_strengths": ["5 mg", "10 mg", "15 mg", "20 mg", "30 mg"],
+      "dosage_form": "tablets",
+      "drug_class": "Opioid analgesic"
+    },
+    {
+      "brand_name": "Prinivil",
+      "generic_name": "Lisinopril",
+      "manufacturer": "Zydus Pharmaceuticals USA Inc",
+      "dosage_strengths": ["2.5 mg", "5 mg", "10 mg", "20 mg", "30 mg", "40 mg"],
+      "dosage_form": "tablets",
+      "drug_class": "ACE inhibitor"
+    },
+    {
+      "brand_name": "Zocor",
+      "generic_name": "Simvastatin",
+      "manufacturer": "Accord Healthcare Inc",
+      "dosage_strengths": ["5 mg", "10 mg", "20 mg", "40 mg", "80 mg"],
+      "dosage_form": "tablets",
+      "drug_class": "Statin"
+    },
+    {
+      "brand_name": "Synthroid",
+      "generic_name": "Levothyroxine",
+      "manufacturer": "MacLeods Pharmaceuticals Ltd",
+      "dosage_strengths": ["25 mcg", "50 mcg", "75 mcg", "100 mcg", "125 mcg", "150 mcg", "200 mcg"],
+      "dosage_form": "tablets",
+      "drug_class": "Thyroid Hormone"
+    },
+    {
+      "brand_name": "Amoxil",
+      "generic_name": "Amoxicillin",
+      "manufacturer": "Teva Pharmaceuticals USA Inc",
+      "dosage_strengths": ["250 mg", "500 mg", "125 mg/5 mL", "250 mg/5 mL"],
+      "dosage_form": ["oral suspension", "tablets", "capsules"],
+      "drug_class": "Antibacterial drug"
+    },
+    {
+      "brand_name": "Zithromax",
+      "generic_name": "Azithromycin",
+      "manufacturer": "Pfizer Inc",
+      "dosage_strengths": ["250 mg", "500 mg", "100 mg/5 mL", "200 mg/5 mL"],
+      "dosage_form": ["tablets", "oral suspension"],
+      "drug_class": "Macrolide antibacterial"
+    },
+    {
+      "brand_name": "Microzide",
+      "generic_name": "Hydrochlorothiazide",
+      "manufacturer": "Sun Pharmaceutical Industries Inc",
+      "dosage_strengths": ["12.5 mg", "25 mg", "50 mg"],
+      "dosage_form": ["tablets", "capsules"],
+      "drug_class": "Thiazide diuretic"
+    },
+    {
+      "brand_name": "Norvasc",
+      "generic_name": "Amlodipine",
+      "manufacturer": "MacLeods Pharmaceuticals Ltd",
+      "dosage_strengths": ["2.5 mg", "5 mg", "10 mg"],
+      "dosage_form": "tablets",
+      "drug_class": "Calcium channel blocker"
+    },
+    {
+      "brand_name": "Xanax",
+      "generic_name": "Alprazolam",
+      "manufacturer": "Aurobindo Pharma Ltd",
+      "dosage_strengths": ["0.25 mg", "0.5 mg", "1 mg", "2 mg"],
+      "dosage_form": "tablets",
+      "drug_class": "Benzodiazepine"
+    },
+    {
+      "brand_name": "Glucophage",
+      "generic_name": "Metformin",
+      "manufacturer": "MacLeods Pharmaceuticals Ltd",
+      "dosage_strengths": ["500 mg", "850 mg", "1000 mg"],
+      "dosage_form": "tablets",
+      "drug_class": "Oral antidiabetic drug"
+    },
+    {
+      "brand_name": "Lipitor",
+      "generic_name": "Atorvastatin",
+      "manufacturer": "MacLeods Pharmaceuticals Ltd",
+      "dosage_strengths": ["10 mg", "20 mg", "40 mg", "80 mg"],
+      "dosage_form": "tablets",
+      "drug_class": "Statin"
+    },
+    {
+      "brand_name": "Prilosec",
+      "generic_name": "Omeprazole",
+      "manufacturer": "MacLeods Pharmaceuticals Ltd",
+      "dosage_strengths": ["10 mg", "20 mg", "40 mg"],
+      "dosage_form": "capsules",
+      "drug_class": "Proton-pump inhibitor"
+    },
+    {
+      "brand_name": "Flonase Nasal Spray",
+      "generic_name": "Fluticasone propionate",
+      "manufacturer": "GlaxoSmithKline LLC",
+      "dosage_strengths": ["50 mcg nasal", "100 mcg", "250 mcg"],
+      "dosage_form": ["nasal spray", "inhalation aerosol"],
+      "drug_class": "Corticosteroid"
+    },
+    {
+      "brand_name": "Fosamax",
+      "generic_name": "Alendronate",
+      "manufacturer": "Merck & Co., Inc",
+      "dosage_strengths": ["5 mg", "10 mg", "35 mg", "40 mg", "70 mg"],
+      "dosage_form": "tablets",
+      "drug_class": "Bisphosphonate"
+    },
+    {
+      "brand_name": "Zofran",
+      "generic_name": "Ondansetron",
+      "manufacturer": "GlaxoSmithKline LLC",
+      "dosage_strengths": ["4 mg", "8 mg"],
+      "dosage_form": "tablets",
+      "drug_class": "Antiemetic drug"
+    },
+    {
+      "brand_name": "Cipro",
+      "generic_name": "Ciprofloxacin",
+      "manufacturer": "Bayer Healthcare Pharmaceuticals Inc",
+      "dosage_strengths": ["250 mg", "500 mg", "750 mg"],
+      "dosage_form": ["tablets", "capsules"],
+      "drug_class": "Fluoroquinolone"
+    },
+    {
+      "brand_name": "Heparin Sodium",
+      "generic_name": "Heparin",
+      "manufacturer": "Pfizer Inc",
+      "dosage_strengths": ["1,000 units/mL", "5,000 units/mL"],
+      "dosage_form": "injection",
+      "drug_class": "Anticoagulant drug"
+    },
+    {
+      "brand_name": "Pepcid",
+      "generic_name": "Famotidine",
+      "manufacturer": "Johnson & Johnson Consumer Inc",
+      "dosage_strengths": ["10 mg", "20 mg", "40 mg"],
+      "dosage_form": "tablets",
+      "drug_class": "H2 antagonist"
+    },
+    {
+      "brand_name": "Omnicef",
+      "generic_name": "Cefdinir",
+      "manufacturer": "AbbVie Inc",
+      "dosage_strengths": ["300 mg", "125 mg/5 mL", "250 mg/5 mL"],
+      "dosage_form": ["capsules", "oral suspension"],
+      "drug_class": "Cephalosporin"
+    }
+  ]
+  

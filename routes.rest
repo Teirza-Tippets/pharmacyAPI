@@ -1,0 +1,38 @@
+
+### Get all medications
+GET http://localhost:3000/medication
+
+### GET medication by Id
+GET http://localhost:3000/medication/67d4d79476563c75a6c960f2
+
+### Create new medication
+POST http://localhost:3000/medication
+Content-Type: application/json
+
+    {
+      "brand_name": "Omnicef",
+      "generic_name": "Cefdinir",
+      "manufacturer": "AbbVie Inc",
+      "dosage_strengths": ["300 mg", "125 mg/5 mL", "250 mg/5 mL"],
+      "dosage_form": ["capsules", "oral suspension"],
+      "drug_class": "Cephalosporin"
+    }
+
+### Update medication by Id
+PUT http://localhost:3000/medication/67d4d79476563c75a6c960e9
+Content-Type: application/json
+
+    {
+      "brand_name": "Lexapro",
+      "generic_name": "Escitalopram",
+      "manufacturer": "MacLeods Pharmaceuticals Ltd",
+      "dosage_strengths": ["5 mg", "10 mg", "20 mg"],
+      "dosage_form": "tablets",
+      "drug_class": "SSRI"
+    }
+
+### Delete medication by Id
+DELETE  http://localhost:3000/medication/67d4e7c79976c9dc036e6f52
+Content-Type: application/json
+
+
