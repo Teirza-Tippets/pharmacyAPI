@@ -11,12 +11,12 @@
         "description": "Local server"
       },
       {
-        "url":"https://cse341-syjf.onrender.com",
+        "url":"https://pharmacyapi-xz7h.onrender.com",
         "description": "Production Server"
       }
     ],
     "paths": {
-      "/medications": {
+      "/medication": {
         "get": {
           "summary": "Get all medications",
           "description": "Retrieve a list of all medications in the drug list.",
@@ -171,7 +171,7 @@
           }
         }
       },
-      "/medications/{id}": {
+      "/medication/{id}": {
         "get": {
           "summary": "Get a medication by ID",
           "description": "Retrieve a specific medication using its ID.",

@@ -11,7 +11,7 @@ const router = express.Router();
 
 /**
  * @swagger
- * /medications:
+ * /medication:
  *   get:
  *     summary: Get all medications
  *     tags: [Medications]
@@ -34,7 +34,7 @@ router.get('/', async (req, res) => {
 
 /**
  * @swagger
- * /medications/{id}:
+ * /medication/{id}:
  *   get:
  *     summary: Get a medication by ID
  *     tags: [Medications]
@@ -66,7 +66,7 @@ router.get('/:id', async (req, res) => {
 
 /**
  * @swagger
- * /medications:
+ * /medication:
  *   post:
  *     summary: Create a new medication
  *     tags: [Medications]
@@ -109,7 +109,7 @@ router.post('/', async (req, res) => {
 
 /**
  * @swagger
- * /medications/{id}:
+ * /medication/{id}:
  *   put:
  *     summary: Update a medication
  *     tags: [Medications]
@@ -162,7 +162,7 @@ router.put('/:id', async (req, res) => {
 
 /**
  * @swagger
- * /medications/{id}:
+ * /medication/{id}:
  *   delete:
  *     summary: Delete a medication
  *     tags: [Medications]
