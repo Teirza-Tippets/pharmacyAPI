@@ -40,12 +40,14 @@ app.set('views', path.join(__dirname, 'src/views'));
 app.use(express.json());
 app.use(expressLayouts);
 
+app.use('/medication', drugRoutes);
+
 //Routes 
 app.get('/', (req, res) =>{
-    res.send('Welcome to the Pharmacy API!')
+    res.render('main/medication')
 });
 
-app.use('/medication', drugRoutes);
+
 // app.use('/category', categoryRoutes);
 
 
