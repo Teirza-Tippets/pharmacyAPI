@@ -12,7 +12,9 @@ export function renderMedications(medications) {
             <p><strong>Dosage Strengths:</strong> ${med.dosage_strengths}</p>
             <p><strong>Dosage Forms:</strong> ${med.dosage_forms}</p>
             <p><strong>Drug Class:</strong> ${med.drug_class}</p>
+            <button class="delete-btn hidden" data-id="${med._id}">Delete</button>
         `;
         container.appendChild(div);
     });
 }
+

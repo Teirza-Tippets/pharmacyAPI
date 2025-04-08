@@ -1,3 +1,12 @@
 <header>
-    <h2>Pharmacy Medication API</h2>
+  <h2>Pharmacy Medication API</h2>
+<% if (user) { %>
+    <div class="user-info">
+      <img src="<%= user.photo %>" alt="Profile photo" width="30" />
+      <span>Welcome, <%= user.name %></span>
+      <a href="/authRoutes/logout">Logout</a>
+    </div>
+  <% } else { %>
+    <a href="/authRoutes/google">Login with Google</a>
+  <% } %>
 </header>

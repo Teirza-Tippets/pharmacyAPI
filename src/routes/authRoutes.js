@@ -14,7 +14,7 @@ router.get(
     "/google/callback",
     passport.authenticate("google", { failureRedirect: "/login" }),
     (req, res) => {
-      res.redirect("main/medication"); // Redirect to dashboard after login
+      res.redirect("/");
     }
   );
   
@@ -22,7 +22,7 @@ router.get(
 // Logout route
 router.get("/logout", (req, res) => {
   req.logout(() => {
-    res.redirect("/login");
+    res.redirect("/");
   });
 });
 

@@ -7,26 +7,34 @@ const passport = require('./config/passport');
 const { MongoClient } = require('mongodb');
 const setupSwagger = require("./swagger");
 const path = require('path');
-// const categoryRoutes = require('./src/routes/categories/category')
-const drugRoutes = require('./src/routes/drugs/medication')
-const authRoutes = require('./src/routes/authRoutes')
+const drugRoutes = require('./src/routes/drugs/medication');
+const authRoutes = require('./src/routes/authRoutes');
+
 
 require('dotenv').config();
 
 setupSwagger(app);
 
 //session configuration
-// app.use(
-//   session({
-//     secret: process.env.SESSION_SECRET,
-//     resave: false,
-//     saveUninitialized: false,
-//     cookie: { secure: process.env.NODE_ENV === "production" }, // Secure cookie in production
-//   })
-// );
+app.use(
+  session({
+    secret: process.env.SESSION_SECRET,
+    resave: false,
+    saveUninitialized: false,
+    cookie: { secure: process.env.NODE_ENV === "production" }, // Secure cookie in production
+  })
+);
 
-// // app.use(passport.initialize());
-// // app.use(passport.session());
+app.use(passport.initialize());
+app.use(passport.session());
+
+
+//authentication route
+app.use((req, res, next) => {
+  res.locals.user = req.user || null;
+  next();
+});
+
 
 
 // MongoDB Connection
@@ -62,10 +70,16 @@ app.use(cors());
 app.use('/medication', drugRoutes);
 app.use('/authRoutes', authRoutes);
 
+app.get('/medications', (req, res) => {
+  res.render('main/medication', { user: req.user || null });
+});
+
+
 //Routes 
 app.get("/login", (req, res) => {
-  res.send('<a href="/auth/google">Login with Google</a>');
+  res.send('<a href="/authRoutes/google">Login with Google</a>');
 });
+
 
 app.get('/', (req, res) =>{
     res.render('main/medication')

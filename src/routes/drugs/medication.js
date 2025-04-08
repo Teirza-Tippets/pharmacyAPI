@@ -1,7 +1,7 @@
 const express = require('express');
 const { ObjectId } = require('mongodb');
 const router = express.Router();
-
+const ensureAuthenticated = require('../../middleware/authMiddleware');
 /**
  * @swagger
  * tags:
@@ -95,7 +95,7 @@ router.get('/:id', async (req, res) => {
  *       500:
  *         description: Failed to create medication
  */
-router.post('/', async (req, res) => {
+router.post('/', ensureAuthenticated, async (req, res) => {
     try {
         const { brand_name, generic_name, manufacturer, dosage_strengths, dosage_forms, drug_class } = req.body;
         const db = req.app.locals.db;
@@ -146,7 +146,7 @@ router.post('/', async (req, res) => {
  *       500:
  *         description: Failed to update medication
  */
-router.put('/:id', async (req, res) => {
+router.put('/:id', ensureAuthenticated, async (req, res) => {
     try {
         const id = req.params.id;
         const medicationId = new ObjectId(id); 
@@ -180,7 +180,7 @@ router.put('/:id', async (req, res) => {
  *       500:
  *         description: Failed to delete medication
  */
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', ensureAuthenticated, async (req, res) => {
     try {
         const { id } = req.params;
         if (!ObjectId.isValid(id)) {
