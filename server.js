@@ -9,6 +9,7 @@ const setupSwagger = require("./swagger");
 const path = require('path');
 const drugRoutes = require('./src/routes/drugs/medication');
 const authRoutes = require('./src/routes/authRoutes');
+const ensureAuthenticated = require('./src/middleware/authMiddleware');
 
 
 require('dotenv').config();
@@ -64,6 +65,7 @@ app.set('views', path.join(__dirname, 'src/views'));
 app.use(express.json());
 app.use(expressLayouts);
 app.use(cors());
+app.use(express.urlencoded({ extended: true }));
 
 
 // app.use('/category', categoryRoutes);
@@ -82,7 +84,19 @@ app.get("/login", (req, res) => {
 
 
 app.get('/', (req, res) =>{
-    res.render('main/medication')
+    res.render('main/medication', { user: req.user });
+});
+
+app.get('/addMedication', ensureAuthenticated, (req, res) => {
+  res.render('category/addMedication');
+});
+
+app.get('/auth/status', (req, res) => {
+  if (req.isAuthenticated()) {
+      res.json({ authenticated: true, user: req.user });
+  } else {
+      res.json({ authenticated: false });
+  }
 });
 
 

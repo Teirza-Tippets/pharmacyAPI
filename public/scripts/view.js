@@ -1,3 +1,4 @@
+import { checkAuthentication } from "/scripts/script.js";
 
 export function renderMedications(medications) {
     const container = document.getElementById('medications-container');
@@ -16,5 +17,7 @@ export function renderMedications(medications) {
         `;
         container.appendChild(div);
     });
+
+    checkAuthentication();
 }
 
