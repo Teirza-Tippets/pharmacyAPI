@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Medication</title>
+</head>
+<body>
+  <h1 class="addHeading">Add New Medication</h1>
+
+  <form id='addForm' action="/" method="POST">
+    <label class='formLabel'>Brand Name:</label>
+    <input type="text" name="brand_name" class='formInput' required><br>
+
+    <label class='formLabel'>Generic Name:</label>
+    <input type="text" name="generic_name" class='formInput' required><br>
+
+    <label class='formLabel'>Manufacturer:</label>
+    <input type="text" name="manufacturer" class='formInput'><br>
+
+    <label class='formLabel'>Dosage Strengths:</label>
+    <input type="text" name="dosage_strengths" class='formInput'><br>
+
+    <label class='formLabel'>Dosage Forms:</label>
+    <input type="text" name="dosage_forms"class='formInput' ><br>
+
+    <label class='formLabel'>Drug Class:</label>
+    <input type="text" name="drug_class" class='formInput'><br>
+
+    <button type="submit">Add Medication</button>
+  </form>
+</body>
+</html>

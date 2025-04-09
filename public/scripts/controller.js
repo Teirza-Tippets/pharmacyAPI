@@ -8,13 +8,5 @@ export async function loadMedications() {
 
 document.addEventListener('DOMContentLoaded', () => {
     loadMedications();
-
-    if (window.currentUser) {
-        document.getElementById('addBtn')?.classList.remove('hidden');
-        document.querySelectorAll('.delete-btn').forEach(btn => btn.classList.remove('hidden'));
-    } else {
-        document.getElementById('addBtn')?.classList.add('hidden');
-        document.querySelectorAll('.delete-btn').forEach(btn => btn.classList.add('hidden'));
-    }
 });
 
